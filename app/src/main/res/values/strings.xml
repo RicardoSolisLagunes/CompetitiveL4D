@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">CompetitiveL4D</string>
+    <string name="content_description_shotgun_icon">Shotgun</string>
+
+    <string name="games_played_with_gun">Games played</string>
+    <string name="damage_dealt_with_gun">Total damage</string>
+    <string name="kills_with_gun">Total kills</string>
+    <string name="favorite_gun_title">Favorite Gun</string>
+
+
+    <string name="match_history_title">Match History</string>
+    <string name="game_won_label">Win (%s mmr)</string>
+    <string name="game_lost_label">Loss (%s mmr)</string>
+    <string name="game_tied_label">Tie (%s mmr)</string>
 </resources>
