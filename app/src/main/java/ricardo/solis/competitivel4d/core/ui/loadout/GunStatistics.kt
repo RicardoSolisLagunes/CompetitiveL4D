@@ -12,10 +12,10 @@ import androidx.compose.foundation.layout.wrapContentHeight
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
-import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -23,13 +23,16 @@ import androidx.compose.ui.unit.sp
 import ricardo.solis.competitivel4d.R
 import ricardo.solis.competitivel4d.core.data.model.loadout.GunStatistics
 import ricardo.solis.competitivel4d.core.ui.PairData
+import ricardo.solis.competitivel4d.mock.datasource.MockGunStatisticsDataSource
 import ricardo.solis.competitivel4d.ui.theme.CompetitiveL4DTheme
+import ricardo.solis.competitivel4d.ui.util.gunIcon
 
 @Composable
 fun GunStatistics(
     gunStatistics: GunStatistics
 ) {
-    val painter = painterResource(id = gunStatistics.icon)
+    val gunIcon = gunStatistics.type.gunIcon()
+    val painter = painterResource(id = gunIcon)
     Surface(
         Modifier
             .wrapContentHeight()
@@ -39,7 +42,7 @@ fun GunStatistics(
         Row {
             Image(
                 painter = painter,
-                contentDescription = stringResource(id = R.string.content_description_shotgun_icon),
+                contentDescription = gunStatistics.name,
                 Modifier
                     .padding(8.dp)
                     .heightIn(80.dp, 100.dp)
@@ -81,13 +84,7 @@ fun GunStatistics(
 fun PreviewLoadOut() {
     CompetitiveL4DTheme {
         GunStatistics(
-            gunStatistics = GunStatistics(
-                name = "Chrome Shotgun",
-                damage = 999999,
-                gamesPlayed = 50,
-                icon = R.drawable.shotgun_icon,
-                kills = 100
-            )
+            gunStatistics = MockGunStatisticsDataSource().getFavoriteGun()
         )
     }
 }

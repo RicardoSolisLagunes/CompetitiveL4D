@@ -19,6 +19,7 @@ import ricardo.solis.competitivel4d.core.data.model.history.GameResult
 import ricardo.solis.competitivel4d.core.data.model.history.GameScores
 import ricardo.solis.competitivel4d.core.data.model.history.GameSummary
 import ricardo.solis.competitivel4d.ui.theme.CompetitiveL4DTheme
+import java.util.UUID
 
 @Composable
 fun GameSummaryView(
@@ -66,7 +67,7 @@ fun GameResult(gameResult: GameResult) {
                     id = R.string.game_lost_label,
                     gameResult.mmr
                 ),
-                MaterialTheme.colorScheme.secondary
+                MaterialTheme.colorScheme.error
             )
         }
 
@@ -84,6 +85,7 @@ fun PreviewGameOverview() {
     CompetitiveL4DTheme {
         GameSummaryView(
             gameSummary = GameSummary(
+                id = UUID.randomUUID(),
                 map = "Dark Carnival",
                 result = GameResult.Win(50),
                 scores = GameScores(

@@ -4,7 +4,7 @@ import androidx.annotation.DrawableRes
 
 data class GunStatistics(
     val name: String,
-    @DrawableRes val icon: Int,
+    val type: Gun,
     val kills: Int,
     val damage: Long,
     val gamesPlayed: Int
