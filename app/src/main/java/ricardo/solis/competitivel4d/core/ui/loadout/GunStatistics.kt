@@ -23,7 +23,7 @@ import androidx.compose.ui.unit.sp
 import ricardo.solis.competitivel4d.R
 import ricardo.solis.competitivel4d.core.data.model.loadout.GunStatistics
 import ricardo.solis.competitivel4d.core.ui.PairData
-import ricardo.solis.competitivel4d.mock.datasource.MockGunStatisticsDataSource
+import ricardo.solis.competitivel4d.core.data.mock.datasource.MockGunStatisticsDataSource
 import ricardo.solis.competitivel4d.ui.theme.CompetitiveL4DTheme
 import ricardo.solis.competitivel4d.ui.util.gunIcon
 

@@ -12,4 +12,7 @@
     <string name="game_won_label">Win (%s mmr)</string>
     <string name="game_lost_label">Loss (%s mmr)</string>
     <string name="game_tied_label">Tie (%s mmr)</string>
+    <string name="dashboard_screen_title">Dashboard</string>
+    <string name="back_button_content_description">Back Button</string>
+    <string name="dashboard_screen_navigation_label">Dashboard</string>
 </resources>

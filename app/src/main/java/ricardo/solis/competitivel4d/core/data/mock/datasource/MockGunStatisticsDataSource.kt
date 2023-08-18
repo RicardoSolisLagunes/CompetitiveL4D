@@ -1,4 +1,4 @@
-package ricardo.solis.competitivel4d.mock.datasource
+package ricardo.solis.competitivel4d.core.data.mock.datasource
 
 import ricardo.solis.competitivel4d.R
 import ricardo.solis.competitivel4d.core.data.model.loadout.Gun

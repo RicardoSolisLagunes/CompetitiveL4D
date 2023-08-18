@@ -1,4 +1,4 @@
-package ricardo.solis.competitivel4d.dashboard.ui
+package ricardo.solis.competitivel4d.ui.screens.dashboard.composable
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
@@ -15,30 +15,23 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.bumptech.glide.integration.compose.ExperimentalGlideComposeApi
+import org.koin.androidx.compose.koinViewModel
 import ricardo.solis.competitivel4d.R
-import ricardo.solis.competitivel4d.core.data.repository.IGunStatisticsRepository
-import ricardo.solis.competitivel4d.core.data.repository.IHistoryRepository
-import ricardo.solis.competitivel4d.core.data.repository.IProfileRepository
 import ricardo.solis.competitivel4d.core.ui.DetailsCard
 import ricardo.solis.competitivel4d.core.ui.history.MatchHistory
 import ricardo.solis.competitivel4d.core.ui.loadout.GunStatistics
 import ricardo.solis.competitivel4d.core.ui.profile.ProfileSummary
-import ricardo.solis.competitivel4d.mock.datasource.MockGunStatisticsDataSource
-import ricardo.solis.competitivel4d.mock.datasource.MockHistoryDataSource
-import ricardo.solis.competitivel4d.mock.datasource.MockProfileDataSource
+import ricardo.solis.competitivel4d.ui.screens.dashboard.viewmodel.DashboardViewModel
 import ricardo.solis.competitivel4d.ui.theme.CompetitiveL4DTheme
 
-@ExperimentalGlideComposeApi
 @Composable
 fun Dashboard(
     modifier: Modifier = Modifier,
-    profileRepository: IProfileRepository,
-    gunStatisticsRepository: IGunStatisticsRepository,
-    historyRepository: IHistoryRepository
+    viewModel: DashboardViewModel = koinViewModel()
 ) {
     Column(modifier.padding(12.dp)) {
         ProfileSummary(
-            profile = profileRepository.getProfile(),
+            profile = viewModel.getProfile(),
             modifier = Modifier.align(Alignment.CenterHorizontally)
         )
         Divider(
@@ -54,7 +47,7 @@ fun Dashboard(
                 fontSize = 18.sp,
                 fontWeight = FontWeight.SemiBold
             )
-            GunStatistics(gunStatistics = gunStatisticsRepository.getFavoriteGun())
+            GunStatistics(gunStatistics = viewModel.getFavoriteGun())
         }
         DetailsCard {
             Text(
@@ -64,7 +57,7 @@ fun Dashboard(
                 fontSize = 18.sp,
                 fontWeight = FontWeight.SemiBold
             )
-            MatchHistory(matches = historyRepository.getMatchHistory())
+            MatchHistory(matches = viewModel.getMatchHistory())
         }
     }
 }
@@ -75,10 +68,7 @@ fun Dashboard(
 fun PreviewDashboard() {
     CompetitiveL4DTheme {
         Dashboard(
-            modifier = Modifier.fillMaxSize(),
-            profileRepository = MockProfileDataSource(),
-            gunStatisticsRepository = MockGunStatisticsDataSource(),
-            historyRepository = MockHistoryDataSource()
+            modifier = Modifier.fillMaxSize()
         )
     }
 }

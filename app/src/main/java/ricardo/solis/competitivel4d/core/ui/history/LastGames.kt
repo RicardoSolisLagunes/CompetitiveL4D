@@ -7,7 +7,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import ricardo.solis.competitivel4d.core.data.model.history.ChapterScore
 import ricardo.solis.competitivel4d.core.data.model.history.GameScores
 import ricardo.solis.competitivel4d.core.data.model.history.GameSummary
-import ricardo.solis.competitivel4d.mock.datasource.MockHistoryDataSource
+import ricardo.solis.competitivel4d.core.data.mock.datasource.MockHistoryDataSource
 import ricardo.solis.competitivel4d.ui.theme.CompetitiveL4DTheme
 import java.util.UUID
 

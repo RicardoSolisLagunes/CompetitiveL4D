@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "ricardo.solis.competitivel4d"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "ricardo.solis.competitivel4d"
@@ -35,6 +35,8 @@ android {
     }
     kotlinOptions {
         jvmTarget = "1.8"
+        freeCompilerArgs += "-opt-in=androidx.compose.material3.ExperimentalMaterial3Api"
+        freeCompilerArgs += "-opt-in=com.bumptech.glide.integration.compose.ExperimentalGlideComposeApi"
     }
     buildFeatures {
         compose = true
@@ -65,6 +67,7 @@ dependencies {
     implementation("io.insert-koin:koin-androidx-compose:3.4.6")
     implementation("io.insert-koin:koin-android:3.4.3")
     implementation("androidx.navigation:navigation-compose:2.7.0")
+    implementation("androidx.compose.material:material:1.5.0")
 
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
