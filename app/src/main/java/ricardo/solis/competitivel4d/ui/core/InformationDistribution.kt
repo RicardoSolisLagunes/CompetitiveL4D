@@ -1,4 +1,4 @@
-package ricardo.solis.competitivel4d.core.ui
+package ricardo.solis.competitivel4d.ui.core
 
 import androidx.annotation.StringRes
 import androidx.compose.foundation.layout.Arrangement

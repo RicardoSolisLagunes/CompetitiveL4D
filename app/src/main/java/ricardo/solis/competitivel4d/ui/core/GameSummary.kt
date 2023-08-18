@@ -1,4 +1,4 @@
-package ricardo.solis.competitivel4d.core.ui.history
+package ricardo.solis.competitivel4d.ui.core
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Row
@@ -14,10 +14,10 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import ricardo.solis.competitivel4d.R
-import ricardo.solis.competitivel4d.core.data.model.history.ChapterScore
-import ricardo.solis.competitivel4d.core.data.model.history.GameResult
-import ricardo.solis.competitivel4d.core.data.model.history.GameScores
-import ricardo.solis.competitivel4d.core.data.model.history.GameSummary
+import ricardo.solis.competitivel4d.data.model.history.ChapterScore
+import ricardo.solis.competitivel4d.data.model.history.GameResult
+import ricardo.solis.competitivel4d.data.model.history.GameScores
+import ricardo.solis.competitivel4d.data.model.history.GameSummary
 import ricardo.solis.competitivel4d.ui.theme.CompetitiveL4DTheme
 import java.util.UUID
 

@@ -2,7 +2,7 @@ package ricardo.solis.competitivel4d.ui.util
 
 import androidx.annotation.DrawableRes
 import ricardo.solis.competitivel4d.R
-import ricardo.solis.competitivel4d.core.data.model.loadout.Gun
+import ricardo.solis.competitivel4d.data.model.loadout.Gun
 
 @DrawableRes
 fun Gun.gunIcon(): Int {

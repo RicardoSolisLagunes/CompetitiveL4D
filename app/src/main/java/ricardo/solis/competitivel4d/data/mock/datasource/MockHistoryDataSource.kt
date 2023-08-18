@@ -1,10 +1,10 @@
-package ricardo.solis.competitivel4d.core.data.mock.datasource
+package ricardo.solis.competitivel4d.data.mock.datasource
 
-import ricardo.solis.competitivel4d.core.data.model.history.ChapterScore
-import ricardo.solis.competitivel4d.core.data.model.history.GameResult
-import ricardo.solis.competitivel4d.core.data.model.history.GameScores
-import ricardo.solis.competitivel4d.core.data.model.history.GameSummary
-import ricardo.solis.competitivel4d.core.data.repository.IHistoryRepository
+import ricardo.solis.competitivel4d.data.model.history.ChapterScore
+import ricardo.solis.competitivel4d.data.model.history.GameResult
+import ricardo.solis.competitivel4d.data.model.history.GameScores
+import ricardo.solis.competitivel4d.data.model.history.GameSummary
+import ricardo.solis.competitivel4d.data.repository.IHistoryRepository
 import java.util.UUID
 
 class MockHistoryDataSource : IHistoryRepository {

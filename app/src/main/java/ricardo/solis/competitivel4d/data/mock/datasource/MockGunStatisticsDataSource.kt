@@ -1,9 +1,9 @@
-package ricardo.solis.competitivel4d.core.data.mock.datasource
+package ricardo.solis.competitivel4d.data.mock.datasource
 
 import ricardo.solis.competitivel4d.R
-import ricardo.solis.competitivel4d.core.data.model.loadout.Gun
-import ricardo.solis.competitivel4d.core.data.model.loadout.GunStatistics
-import ricardo.solis.competitivel4d.core.data.repository.IGunStatisticsRepository
+import ricardo.solis.competitivel4d.data.model.loadout.Gun
+import ricardo.solis.competitivel4d.data.model.loadout.GunStatistics
+import ricardo.solis.competitivel4d.data.repository.IGunStatisticsRepository
 import kotlin.random.Random
 
 class MockGunStatisticsDataSource : IGunStatisticsRepository {

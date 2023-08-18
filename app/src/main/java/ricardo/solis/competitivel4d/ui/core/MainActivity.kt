@@ -1,4 +1,4 @@
-package ricardo.solis.competitivel4d.core
+package ricardo.solis.competitivel4d.ui.core
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity

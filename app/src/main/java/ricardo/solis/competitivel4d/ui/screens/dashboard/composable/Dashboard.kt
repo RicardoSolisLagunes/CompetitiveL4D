@@ -17,10 +17,10 @@ import androidx.compose.ui.unit.sp
 import com.bumptech.glide.integration.compose.ExperimentalGlideComposeApi
 import org.koin.androidx.compose.koinViewModel
 import ricardo.solis.competitivel4d.R
-import ricardo.solis.competitivel4d.core.ui.DetailsCard
-import ricardo.solis.competitivel4d.core.ui.history.MatchHistory
-import ricardo.solis.competitivel4d.core.ui.loadout.GunStatistics
-import ricardo.solis.competitivel4d.core.ui.profile.ProfileSummary
+import ricardo.solis.competitivel4d.ui.core.DetailsCard
+import ricardo.solis.competitivel4d.ui.core.MatchHistory
+import ricardo.solis.competitivel4d.ui.core.GunStatistics
+import ricardo.solis.competitivel4d.ui.core.ProfileSummary
 import ricardo.solis.competitivel4d.ui.screens.dashboard.viewmodel.DashboardViewModel
 import ricardo.solis.competitivel4d.ui.theme.CompetitiveL4DTheme
 

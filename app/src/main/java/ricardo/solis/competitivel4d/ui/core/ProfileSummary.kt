@@ -1,4 +1,4 @@
-package ricardo.solis.competitivel4d.core.ui.profile
+package ricardo.solis.competitivel4d.ui.core
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
@@ -18,7 +18,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.bumptech.glide.integration.compose.ExperimentalGlideComposeApi
 import com.bumptech.glide.integration.compose.GlideImage
-import ricardo.solis.competitivel4d.core.data.model.user.Profile
+import ricardo.solis.competitivel4d.data.model.user.Profile
 
 @ExperimentalGlideComposeApi
 @Composable

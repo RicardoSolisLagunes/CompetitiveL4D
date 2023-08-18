@@ -1,8 +1,8 @@
-package ricardo.solis.competitivel4d.core.data.mock.datasource
+package ricardo.solis.competitivel4d.data.mock.datasource
 
-import ricardo.solis.competitivel4d.core.data.model.user.Profile
-import ricardo.solis.competitivel4d.core.data.model.user.ProfileStatus
-import ricardo.solis.competitivel4d.core.data.repository.IProfileRepository
+import ricardo.solis.competitivel4d.data.model.user.Profile
+import ricardo.solis.competitivel4d.data.model.user.ProfileStatus
+import ricardo.solis.competitivel4d.data.repository.IProfileRepository
 
 class MockProfileDataSource: IProfileRepository {
     override fun getProfile(): Profile {

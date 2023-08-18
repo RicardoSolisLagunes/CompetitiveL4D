@@ -1,4 +1,4 @@
-package ricardo.solis.competitivel4d.core.data.model.user
+package ricardo.solis.competitivel4d.data.model.user
 
 data class Profile(
     val id: String,

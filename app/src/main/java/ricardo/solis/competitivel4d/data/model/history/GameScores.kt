@@ -1,4 +1,4 @@
-package ricardo.solis.competitivel4d.core.data.model.history
+package ricardo.solis.competitivel4d.data.model.history
 
 class GameScores(
     val chapterScores: List<ChapterScore>

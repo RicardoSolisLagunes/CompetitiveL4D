@@ -6,6 +6,7 @@ import androidx.compose.material.Icon
 import androidx.compose.material.Text
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Info
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.graphics.Color
@@ -34,7 +35,7 @@ object BottomNavigationItems {
 @Composable
 fun CompetitiveL4DBottomNavigationBar(navController: NavController) {
     BottomNavigation(
-        backgroundColor = Color(0xFF0F9D58)
+        backgroundColor = MaterialTheme.colorScheme.primaryContainer
     ) {
         val navBackStackEntry by navController.currentBackStackEntryAsState()
         val currentRoute = navBackStackEntry?.destination?.route
@@ -46,7 +47,10 @@ fun CompetitiveL4DBottomNavigationBar(navController: NavController) {
                     navController.navigate(navItem.route)
                 },
                 icon = {
-                    Icon(imageVector = navItem.icon, contentDescription = stringResource(id = navItem.label))
+                    Icon(
+                        imageVector = navItem.icon,
+                        contentDescription = stringResource(id = navItem.label)
+                    )
                 },
                 label = {
                     Text(text = stringResource(id = navItem.label))

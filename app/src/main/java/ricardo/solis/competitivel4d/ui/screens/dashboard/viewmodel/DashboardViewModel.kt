@@ -1,12 +1,12 @@
 package ricardo.solis.competitivel4d.ui.screens.dashboard.viewmodel
 
 import androidx.lifecycle.ViewModel
-import ricardo.solis.competitivel4d.core.data.model.history.GameSummary
-import ricardo.solis.competitivel4d.core.data.model.loadout.GunStatistics
-import ricardo.solis.competitivel4d.core.data.model.user.Profile
-import ricardo.solis.competitivel4d.core.data.repository.IGunStatisticsRepository
-import ricardo.solis.competitivel4d.core.data.repository.IHistoryRepository
-import ricardo.solis.competitivel4d.core.data.repository.IProfileRepository
+import ricardo.solis.competitivel4d.data.model.history.GameSummary
+import ricardo.solis.competitivel4d.data.model.loadout.GunStatistics
+import ricardo.solis.competitivel4d.data.model.user.Profile
+import ricardo.solis.competitivel4d.data.repository.IGunStatisticsRepository
+import ricardo.solis.competitivel4d.data.repository.IHistoryRepository
+import ricardo.solis.competitivel4d.data.repository.IProfileRepository
 
 class DashboardViewModel(
     private val profileRepository: IProfileRepository,
